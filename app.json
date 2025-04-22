@@ -1,10 +1,43 @@
 {
   "expo": {
-    "scheme": "acme",
+    "scheme": "momsupport",
     "plugins": [
       "expo-router"
     ],
-    "name": "al-akaz",
-    "slug": "al-akaz"
+    "name": "Mom Support",
+    "slug": "mom-support",
+    "ios": {
+      "bundleIdentifier": "com.momsupport.app",
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.momsupport.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#4B6D9B"
+      }
+    },
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#4B6D9B"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "web": {
+      "bundler": "metro"
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "supabaseUrl": "https://psbnfxaufomqxyscrlmh.supabase.co",
+      "supabaseAnonKey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBzYm5meGF1Zm9tcXh5c2NybG1oIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzY0NzYzMjAsImV4cCI6MjA1MjA1MjMyMH0.d1JWsul-MO0A2oxQXP786lxkH-If9iXLGz5KtE7azH8"
+    }
   }
 }
